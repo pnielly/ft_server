@@ -1,0 +1,4 @@
+CREATE DATABASE phpmyadmin;
+GRANT SELECT, INSERT, UPDATE, DELETE ON phpmyadmin.* TO 'admin'@'localhost' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'admin' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
